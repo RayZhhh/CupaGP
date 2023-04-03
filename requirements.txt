@@ -1,0 +1,18 @@
+# If you want to use GPU, an appropriate CUDA environment is required. 
+# Please check your CUDA environment first if you encounter errors.
+
+
+####################################################### Required #######################################################
+numpy   # We used a lot of numpy arrays.
+
+numba   # We used numba.cuda GPU interface, and its JIT interface in CupaGP.
+########################################################################################################################
+
+
+####################################################### Optional #######################################################
+pycuda  # Optional. Install this if you want to use PyCUDA as GPU interface.
+        # In our tests, we found that PyCUDA interface is slightly faster (not much) than numba.cuda interface.
+        
+pillow  # Optional. If you want to run examples in ./example, please intall this package.
+########################################################################################################################
+
