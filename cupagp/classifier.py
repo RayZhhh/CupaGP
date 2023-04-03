@@ -5,7 +5,7 @@ from typing import List
 
 import numpy as np
 
-from cupagp.program import Program
+from .program import Program
 from .eval_cpu import CPUEvaluator
 
 
@@ -246,7 +246,6 @@ class BinaryClassifier:
         print(f'[ Valid set accuracy        ] {self.best_test_program.fitness}')
         self.test_evaluator.evaluate_population([self.best_test_program])
 
-        # print(f'[ =========Run Test======== ]')
         print(f'[ Best program in test data ] {self.best_test_program}')
         print(f'[ Accuracy                  ] {self.best_test_program.fitness}')
         print()
